@@ -129,21 +129,12 @@ export default function AssistantPage() {
       {/* Messages */}
       <div className="flex-1 overflow-auto px-8 py-6">
         {messages.length === 0 ? (
-          <div>
-            <p className="text-sm text-slate-400 mb-4 font-medium">Быстрые запросы</p>
-            <div className="grid grid-cols-1 gap-2 max-w-2xl">
-              {QUICK_PROMPTS.map((p, i) => (
-                <button
-                  key={i}
-                  onClick={() => send(p.text)}
-                  className="flex items-start gap-3 text-left text-sm p-3.5 bg-white border border-slate-200 rounded-xl hover:border-teal-300 hover:bg-teal-50 transition-all text-slate-700 group"
-                >
-                  <span className="text-base">{p.icon}</span>
-                  <span className="group-hover:text-teal-800 transition-colors">{p.text}</span>
-                </button>
-              ))}
-            </div>
-          </div>
+          <div className="flex flex-col items-center justify-center h-full text-center pb-16">
+    <div className="w-12 h-12 rounded-2xl bg-slate-800 flex items-center justify-center mb-4">
+      <span className="text-teal-400 text-lg font-bold" style={{fontFamily: 'Sora, sans-serif'}}>N</span>
+    </div>
+    <p className="text-slate-500 text-sm">Задай вопрос — я готов помочь</p>
+  </div>
         ) : (
           <>
             {messages.map((msg, i) =>
