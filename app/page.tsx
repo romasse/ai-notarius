@@ -18,6 +18,15 @@ const features = [
     color: 'from-blue-50 to-indigo-50',
     border: 'border-blue-200',
     tag: 'Документы · Договоры · Налоги · Клиенты',
+ },
+  {
+    href: '/debtors',
+    emoji: '',
+    title: 'Реестр должников',
+    desc: 'Проверка физических и юридических лиц по Единому реестру должников Минюста Украины.',
+    color: 'from-red-50 to-rose-50',
+    border: 'border-red-200',
+    tag: 'Исполнительные производства · Проверка · Минюст',
   },
 ]
 
