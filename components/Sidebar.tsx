@@ -6,7 +6,6 @@ const nav = [
   { href: '/', label: 'Главная', icon: IconHome },
   { href: '/checklist', label: 'Чек-лист', icon: IconChecklist },
   { href: '/assistant', label: 'AI-ассистент', icon: IconBot },
-  { href: '/guide', label: 'Инструкция', icon: IconBook },
 ]
 
 function IconHome() {
