@@ -19,7 +19,6 @@ const features = [
     border: 'border-blue-200',
     tag: 'Документы · Договоры · Налоги · Клиенты',
   },
-  {
 ]
 
 const stats = [
@@ -32,7 +31,6 @@ const stats = [
 export default function HomePage() {
   return (
     <div className="p-8 max-w-4xl">
-      {/* Hero */}
       <div className="mb-10">
         <div className="inline-flex items-center gap-2 bg-teal-50 text-teal-700 text-xs font-medium px-3 py-1.5 rounded-full border border-teal-200 mb-4">
           <span className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse inline-block" />
@@ -42,11 +40,10 @@ export default function HomePage() {
           Нотариус AI
         </h1>
         <p className="text-slate-500 text-lg leading-relaxed max-w-2xl">
-          Всё для сопровождения сделки с недвижимостью в одном месте. Чек-листы, AI-ассистент, инструкции — без переключения между вкладками.
+          Всё для сопровождения сделки с недвижимостью в одном месте. Чек-листы, AI-ассистент — без переключения между вкладками.
         </p>
       </div>
 
-      {/* Stats */}
       <div className="grid grid-cols-4 gap-3 mb-10">
         {stats.map(s => (
           <div key={s.label} className="bg-white rounded-xl p-4 border border-slate-200">
@@ -56,7 +53,6 @@ export default function HomePage() {
         ))}
       </div>
 
-      {/* Feature cards */}
       <div className="space-y-4">
         {features.map(f => (
           <Link
