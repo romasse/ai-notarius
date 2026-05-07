@@ -22,7 +22,7 @@ export default function DebtorsPage() {
         <p className="text-sm text-gray-600 mb-4">
           На сайте реестра введите: фамилию, имя, отчество и ИНН (РНОКПП) проверяемого лица.
         </p>
-        
+        <a
           href="https://erb.minjust.gov.ua/#/search-debtors"
           target="_blank"
           rel="noopener noreferrer"
@@ -35,19 +35,30 @@ export default function DebtorsPage() {
       <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
         <h2 className="text-base font-semibold text-gray-800 mb-3">Что содержит реестр</h2>
         <ul className="space-y-2 text-sm text-gray-600">
-          {[
-            'ФИО и дата рождения должника',
-            'ИНН или код ЕГРПОУ (для юрлиц)',
-            'Номер исполнительного производства',
-            'Категория взыскания (алименты, штраф и т.д.)',
-            'Данные исполнителя и его контакты',
-            'Дата внесения в реестр',
-          ].map((item) => (
-            <li key={item} className="flex items-start gap-2">
-              <span className="text-green-500">v</span>
-              <span>{item}</span>
-            </li>
-          ))}
+          <li className="flex items-start gap-2">
+            <span className="text-green-500">v</span>
+            <span>ФИО и дата рождения должника</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-green-500">v</span>
+            <span>ИНН или код ЕГРПОУ (для юрлиц)</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-green-500">v</span>
+            <span>Номер исполнительного производства</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-green-500">v</span>
+            <span>Категория взыскания (алименты, штраф и т.д.)</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-green-500">v</span>
+            <span>Данные исполнителя и его контакты</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-green-500">v</span>
+            <span>Дата внесения в реестр</span>
+          </li>
         </ul>
         <p className="text-xs text-gray-400 mt-4">
           Наличие в реестре означает открытое исполнительное производство.
