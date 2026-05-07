@@ -78,12 +78,12 @@ export default function DebtorsPage() {
           onClick={handleSearch}
           className="mt-6 w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-6 rounded-xl transition flex items-center justify-center gap-2"
         >
-          🔍 Проверить в реестре
+          Проверить в реестре
         </button>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
-        <h2 className="text-base font-semibold text-gray-800 mb-3">📋 Что содержит реестр</h2>
+        <h2 className="text-base font-semibold text-gray-800 mb-3">Что содержит реестр</h2>
         <ul className="space-y-2 text-sm text-gray-600">
           {[
             'ФИО и дата рождения должника',
@@ -94,24 +94,24 @@ export default function DebtorsPage() {
             'Дата внесения в реестр',
           ].map((item) => (
             <li key={item} className="flex items-start gap-2">
-              <span className="text-green-500 mt-0.5">✓</span>
+              <span className="text-green-500 mt-0.5">v</span>
               <span>{item}</span>
             </li>
           ))}
         </ul>
         <p className="text-xs text-gray-400 mt-4">
-          ⚠️ Наличие в реестре означает открытое исполнительное производство. Нотариус не вправе удостоверять сделки с таким должником.
+          Наличие в реестре означает открытое исполнительное производство. Нотариус не вправе удостоверять сделки с таким должником.
         </p>
       </div>
 
       <div className="mt-4 bg-gray-50 border border-gray-200 rounded-xl p-4">
-        
+        <a
           href="https://erb.minjust.gov.ua/#/search-debtors"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 hover:text-blue-800 text-sm underline"
         >
-          Открыть реестр напрямую →
+          Открыть реестр напрямую
         </a>
       </div>
     </div>
