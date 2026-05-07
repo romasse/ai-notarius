@@ -20,14 +20,6 @@ const features = [
     tag: 'Документы · Договоры · Налоги · Клиенты',
   },
   {
-    href: '/guide',
-    emoji: '📖',
-    title: 'Метапромт и инструкция',
-    desc: 'Готовый системный промт для Claude Projects. Пошаговая инструкция по настройке ассистента.',
-    color: 'from-amber-50 to-orange-50',
-    border: 'border-amber-200',
-    tag: 'Claude Projects · Настройка · Примеры',
-  },
 ]
 
 const stats = [
