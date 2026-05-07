@@ -21,13 +21,6 @@ const features = [
   },
 ]
 
-const stats = [
-  { label: 'Документов в чек-листе', value: '39' },
-  { label: 'Типов сделок', value: '2' },
-  { label: 'Спецблоков', value: '2' },
-  { label: 'Режим', value: 'Личный' },
-]
-
 export default function HomePage() {
   return (
     <div className="p-8 max-w-4xl">
@@ -37,20 +30,11 @@ export default function HomePage() {
           Персональный инструмент · Украинский рынок
         </div>
         <h1 className="text-3xl font-bold text-slate-900 mb-3" style={{fontFamily: 'Sora, sans-serif'}}>
-          AI-Нотариус
+          Нотариус AI
         </h1>
         <p className="text-slate-500 text-lg leading-relaxed max-w-2xl">
           Всё для сопровождения сделки с недвижимостью в одном месте. Чек-листы, AI-ассистент.
         </p>
-      </div>
-
-      <div className="grid grid-cols-4 gap-3 mb-10">
-        {stats.map(s => (
-          <div key={s.label} className="bg-white rounded-xl p-4 border border-slate-200">
-            <div className="text-2xl font-bold text-slate-900" style={{fontFamily: 'Sora, sans-serif'}}>{s.value}</div>
-            <div className="text-xs text-slate-500 mt-0.5">{s.label}</div>
-          </div>
-        ))}
       </div>
 
       <div className="space-y-4">
