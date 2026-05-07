@@ -37,10 +37,10 @@ export default function HomePage() {
           Персональный инструмент · Украинский рынок
         </div>
         <h1 className="text-3xl font-bold text-slate-900 mb-3" style={{fontFamily: 'Sora, sans-serif'}}>
-          Нотариус AI
+          AI-Нотариус
         </h1>
         <p className="text-slate-500 text-lg leading-relaxed max-w-2xl">
-          Всё для сопровождения сделки с недвижимостью в одном месте. Чек-листы, AI-ассистент — без переключения между вкладками.
+          Всё для сопровождения сделки с недвижимостью в одном месте. Чек-листы, AI-ассистент.
         </p>
       </div>
 
@@ -76,7 +76,7 @@ export default function HomePage() {
       </div>
 
       <p className="text-xs text-slate-400 mt-10">
-        Законодательство Украины · ЦКУ · ЗУ «О нотариате» · НКУ · Обновлено 2025
+        Законодательство Украины · ЦКУ · ЗУ «О нотариате» · НКУ · Обновлено 2026
       </p>
     </div>
   )
